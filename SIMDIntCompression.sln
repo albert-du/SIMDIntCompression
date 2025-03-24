@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIMDIntCompression", "SIMDI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Example\Example.csproj", "{5B179C1A-7AF5-4447-8ADF-F0A9D43234DF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5DF09E4F-AB5B-4978-AEA7-492973470CF4}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SIMDIntCompression.Tests", "tests\SIMDIntCompression.Tests\SIMDIntCompression.Tests.fsproj", "{98617504-9A35-4B43-9D53-4F3D24F6F887}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +25,15 @@ Global
 		{5B179C1A-7AF5-4447-8ADF-F0A9D43234DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B179C1A-7AF5-4447-8ADF-F0A9D43234DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B179C1A-7AF5-4447-8ADF-F0A9D43234DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98617504-9A35-4B43-9D53-4F3D24F6F887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98617504-9A35-4B43-9D53-4F3D24F6F887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98617504-9A35-4B43-9D53-4F3D24F6F887}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98617504-9A35-4B43-9D53-4F3D24F6F887}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{98617504-9A35-4B43-9D53-4F3D24F6F887} = {5DF09E4F-AB5B-4978-AEA7-492973470CF4}
 	EndGlobalSection
 EndGlobal
