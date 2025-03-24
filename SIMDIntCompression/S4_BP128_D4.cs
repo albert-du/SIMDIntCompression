@@ -1,5 +1,4 @@
 using System.Diagnostics;
-using System.Numerics;
 using System.Runtime.InteropServices;
 using System.Runtime.Intrinsics;
 
@@ -20,7 +19,6 @@ namespace SIMDIntCompression;
 /// </summary>
 public unsafe class S4_BP128_D4 : IIntCompressionCodec<uint>
 {
-
     const uint MiniBlockSize = 128;
     const int HowManyMiniBlocks = 16;
 

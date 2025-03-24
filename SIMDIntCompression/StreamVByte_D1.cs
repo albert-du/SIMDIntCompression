@@ -336,25 +336,25 @@ public unsafe class StreamVByte_D1 : IIntCompressionCodec<uint>
         byte* dataPtr = *dataPtrPtr;
         uint val;
 
-        if (code == 0)
-        { // 1 byte
+        if (code == 0) // 1 byte
+        {
             val = *dataPtr;
             dataPtr += 1;
         }
-        else if (code == 1)
-        { // 2 bytes
+        else if (code == 1) // 2 bytes
+        {
             val = *(ushort*)dataPtr;
             dataPtr += 2;
         }
-        else if (code == 2)
-        { // 3 bytes
+        else if (code == 2) // 3 bytes
+        {
             val = *(ushort*)dataPtr;
             val |= (uint)(*(dataPtr + 2) << 16);
             dataPtr += 3;
         }
-        else
-        { // code == 3
-            val = *(uint*)dataPtr; // 4 bytes
+        else // 4 bytes
+        {
+            val = *(uint*)dataPtr;
             dataPtr += 4;
         }
 

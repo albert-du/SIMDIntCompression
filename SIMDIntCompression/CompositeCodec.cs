@@ -78,5 +78,4 @@ public class CompositeCodec<T, Codec1, Codec2> : IIntCompressionCodec<T>
 
         return codec1Decompressed + codec2Decompressed;
     }
-
 }

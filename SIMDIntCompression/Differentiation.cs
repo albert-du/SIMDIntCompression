@@ -1,5 +1,4 @@
-﻿using System;
-using System.Numerics;
+﻿using System.Numerics;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Runtime.Intrinsics;
@@ -185,8 +184,6 @@ public static class Differentiation
             DiffSimd256(input);
         }
     }
-
-
 
     /// <summary>
     /// Calculates 4 int diffs, in place

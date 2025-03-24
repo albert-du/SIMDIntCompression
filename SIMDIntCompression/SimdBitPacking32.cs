@@ -5,6 +5,8 @@ using System.Runtime.Intrinsics;
 
 /// <summary>
 /// SIMD bit packing/unpacking for 32-bit (unsigned) integers.
+/// 
+/// No differential coding.
 /// </summary>
 public static unsafe partial class SimdBitPacking32
 {

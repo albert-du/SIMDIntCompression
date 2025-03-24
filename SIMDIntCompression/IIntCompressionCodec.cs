@@ -3,7 +3,7 @@ using System.Text;
 namespace SIMDIntCompression;
 
 /// <summary>
-/// Interface for integer compression codecs.
+/// Integer compression codec.
 /// 
 /// Compatible with blocks of <see cref="BlockSize"/> Ts.
 /// </summary>

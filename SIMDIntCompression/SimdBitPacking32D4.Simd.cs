@@ -14108,7 +14108,7 @@ public static unsafe partial class SimdBitPacking32D4
             case 30: Pack30(initOffset, input, output); break; 
             case 31: Pack31(initOffset, input, output); break; 
             case 32: Pack32(initOffset, input, output); break; 
-            // NOTE: Pack32 could be further optimized since it's an extreme edge case
+            // NOTE: Pack32 could be further optimized but isn't here since it's an extreme edge case
             default: throw new ArgumentException("Unsupported bit width.");
         }
     }

@@ -1,6 +1,5 @@
 namespace SIMDIntCompression;
 
-
 /// <summary>
 /// Enable encoding extension methods for all codecs.
 /// </summary>
