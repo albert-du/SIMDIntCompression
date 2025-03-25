@@ -9,6 +9,7 @@
   <ItemGroup>
     <Compile Include="prelude.fs" />
     <Compile Include="SSe2Fact.fs" />
+    <Compile Include="UtilsTests.fs" />
     <Compile Include="S4_BP128_D4Tests.fs" />
     <Compile Include="VectorExtensionTests.fs" />
     <Compile Include="BinaryPacking128Tests.fs" />

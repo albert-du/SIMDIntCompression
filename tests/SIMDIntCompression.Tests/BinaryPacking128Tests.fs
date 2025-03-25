@@ -124,3 +124,30 @@ let ``Trivial`` () =
 
     Assert.Equal(n, decodedLength)
     Enumerable.SequenceEqual(data, decoded) |> Assert.True
+
+// signed int tests
+[<Fact>]
+let ``Empty input signed`` () =
+    let input: int array = [|1; 22; 44; 45; 55; 203|]
+
+    let maxOutputSize = BinaryPacking128.GetMaxCompressedLength input
+
+    let output = Array.zeroCreate<byte> maxOutputSize
+
+    let outputLength = BinaryPacking128.Encode(input, output)
+
+    // truncate the output to the actual length
+    let output = output[..outputLength]
+
+    Assert.Equal(20, outputLength)
+
+    Assert.Equal(input.Length, BinaryPacking128.GetDecompressedLength output)
+
+    let decoded: int array =
+        Array.zeroCreate (BinaryPacking128.GetDecompressedLength output)
+
+    let decodedLength = BinaryPacking128.Decode(output[..outputLength], decoded)
+
+    Assert.Equal(input.Length, decodedLength)
+
+    Enumerable.SequenceEqual(input, decoded) |> Assert.True

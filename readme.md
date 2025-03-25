@@ -2,7 +2,7 @@
  .NET implementation of SIMD-based integer compression algorithms.
 
 ## Introduction
-This libary is based on https://github.com/fast-pack/SIMDCompressionAndIntersection and provides a .NET implementation of SIMD-based integer compression algorithms for lists of increasing 32 bit unsigned integers. The library is written in C# and targets .NET 8.0+.
+This libary is based on https://github.com/fast-pack/SIMDCompressionAndIntersection and provides a .NET implementation of SIMD-based integer compression algorithms for lists of increasing 32 bit unsigned integers. The library is written in C# and targets .NET 9.0+.
 
 
 Consider the following list: 
@@ -28,7 +28,7 @@ The following algorithms are implemented in this library:
 - **BinaryPacking128**: Composite algorithm that combines S4-BP128-D4 and StreamVByte-D1. It uses S4-BP128-D4 for blocks of 128 integers and StreamVByte-D1 for any remainder. __This is the recommended algorithm for general use.__ For those already using `fast-pack/SIMDCompressionAndIntersection` Note that the binary format of this implementations differs from that of the reference implementation in that this library prefixes the compressed data with the length of the compressed data of the first composite section. 
 
 ## Usage
-This libary currently only supports 32 bit unsigned integers in an increasing order. It's recommended to use the `BinaryPacking128` algorithm for general use. The following example demonstrates how to use the `BinaryPacking128` algorithm to compress and decompress a list of integers. Static and instance methods are available for both encoding and decoding.  
+This libary currently only supports 32 bit integers in an increasing order. It's recommended to use the `BinaryPacking128` algorithm for general use. The following example demonstrates how to use the `BinaryPacking128` algorithm to compress and decompress a list of integers. Static and instance methods are available for both encoding and decoding. BinaryPacking128 also contains int32 overloads for the same methods automatically casting to uint32.
 
 ```csharp
 List<uint> input = [];
@@ -67,9 +67,7 @@ Console.WriteLine($"Input: {inputArray.Length} Output: {decodedWritten} Success:
 
 ## API
 
-### BinaryPacking128
-
-Each of the algorithms has the following static methods:
+Each of the codecs have the following static methods:
 
 ```csharp
 public static int GetMaxCompressedLength(ReadOnlySpan<uint> input);
@@ -94,6 +92,36 @@ public static int Decode(ReadOnlySpan<byte> input, Span<uint> output);
 
 Decodes the compressed data and writes the decompressed data to the output span. Returns the length of the decompressed data.
 
+### Instance methods
+```csharp
+public int Encode(ReadOnlySpan<uint> input, Span<byte> output);
+public int Decode(ReadOnlySpan<byte> input, Span<uint> output);
+public int GetMaxCompressedLength(ReadOnlySpan<uint> input);
+public int GetDecompressedLength(ReadOnlySpan<byte> input);
+```
+
+### BinaryPacking128
+
+Additionally, BinaryPacking128 contains the following, which may throw `ArgumentException` if the input is not entirely non negative:
+
+```csharp
+public static int GetMaxCompressedLength(ReadOnlySpan<int> input);
+```
+Returns the maximum length of the compressed data for the given input.
+
+
+```csharp
+public static int Encode(ReadOnlySpan<int> input, Span<byte> output);
+```
+
+Encodes the input data and writes the compressed data to the output span. Returns the length of the compressed data.
+
+```csharp
+public static int Decode(ReadOnlySpan<byte> input, Span<int> output);
+```
+
+Decodes the compressed data and writes the decompressed data to the output span. Returns the length of the decompressed data.
+
 ## How it works
 
-Using SIMD instructions, we can process multiple integers at once. This is particularly useful for integer compression algorithms, which often operate on blocks of integers. The library uses the `System.Numerics.Vectors` namespace to leverage SIMD instructions across multiple platforms without writing intrinsic code for each platform. The library is written in C# and targets .NET 8.0 and newer.
+Using SIMD instructions, we can process multiple integers at once. This is particularly useful for integer compression algorithms, which often operate on blocks of integers. The library uses the `System.Numerics.Vectors` namespace to leverage SIMD instructions across multiple platforms without writing intrinsic code for each platform. The library is written in C# and targets .NET 9.0 and newer.
