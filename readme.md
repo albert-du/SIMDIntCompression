@@ -30,7 +30,21 @@ The following algorithms are implemented in this library:
 ## Usage
 This libary currently only supports 32 bit integers in an increasing order. It's recommended to use the `BinaryPacking128` algorithm for general use. The following example demonstrates how to use the `BinaryPacking128` algorithm to compress and decompress a list of integers. Static and instance methods are available for both encoding and decoding. BinaryPacking128 also contains int32 overloads for the same methods automatically casting to uint32.
 
+Available on [NuGet](https://www.nuget.org/packages/SIMDIntCompression).
+
+Add to a project
+```
+$ dotnet package add SIMDIntCompression
+```
+
+or in interactive.
+```fsharp
+#r "nuget: SIMDIntCompression"
+```
+
 ```csharp
+using SIMDIntCompression;
+
 List<uint> input = [];
 
 // simple synthetic data
