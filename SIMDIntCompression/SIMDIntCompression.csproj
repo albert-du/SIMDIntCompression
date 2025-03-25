@@ -5,11 +5,25 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+
+    <PackageId>SIMDIntCompression</PackageId>
+    <PackageDescription>Fast integer compression.</PackageDescription>
     <PackageVersion>1.0.0-alpha1</PackageVersion>
+    <PackageTags>simd;compression;integer;performance</PackageTags>
+    <Authors>Albert Du</Authors>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/albert-du/SIMDIntCompression</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/albert-du/SIMDIntCompression</RepositoryUrl>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
     <InternalsVisibleTo Include="$(AssemblyName).Tests"/>
+  </ItemGroup>
+
+    <ItemGroup>
+    <None Include="..\readme.md" Pack="true" PackagePath="\"/>
   </ItemGroup>
 
 </Project>

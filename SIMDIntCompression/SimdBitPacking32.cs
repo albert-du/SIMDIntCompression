@@ -10,7 +10,7 @@ using System.Runtime.Intrinsics;
 /// </summary>
 public static unsafe partial class SimdBitPacking32
 {
-    public static uint MaxBits(uint* begin)
+    internal static uint MaxBits(uint* begin)
     {
         var pin = (Vector128<uint>*)begin;
         var accumulator = Vector128.Load((uint*)pin);
