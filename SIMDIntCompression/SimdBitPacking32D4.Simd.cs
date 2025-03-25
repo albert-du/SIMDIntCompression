@@ -14071,6 +14071,13 @@ public static unsafe partial class SimdBitPacking32D4
         return inVec;
     }
 
+    /// <summary>
+    /// Pack the input array into the output array using the specified bit width.
+    /// </summary>
+    /// <param name="initOffset">The initial offset.</param>
+    /// <param name="input">The input array of integers.</param>
+    /// <param name="output">The output array of vectors.</param>
+    /// <param name="bit">The bit width.</param>
     public static void Pack(V128i initOffset, uint* input, V128i* output, int bit)
     {
         switch (bit)
@@ -14113,6 +14120,13 @@ public static unsafe partial class SimdBitPacking32D4
         }
     }
 
+    /// <summary>
+    /// Unpack the input array of vectors into the output array of integers using the specified bit width.
+    /// </summary>
+    /// <param name="initOffset">The initial offset.</param>
+    /// <param name="input">The input array of vectors.</param>
+    /// <param name="output">The output array of integers.</param>
+    /// <param name="bit">The bit width.</param>
     public static V128i Unpack(V128i initOffset, V128i* input, uint* output, int bit) => bit switch
     {
         0 => Unpack0(initOffset, input, output),

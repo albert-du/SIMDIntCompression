@@ -5,6 +5,9 @@ using System.Runtime.Intrinsics;
 
 namespace SIMDIntCompression;
 
+/// <summary>
+/// Differentiation methods.
+/// </summary>
 public static class Differentiation
 {
 
@@ -203,7 +206,7 @@ public static class Differentiation
             Diff4Scalar(input);
     }
 
-    public static void Diff4Simd(Span<int> data)
+    private static void Diff4Simd(Span<int> data)
     {
         ref int curr = ref MemoryMarshal.GetReference(data);
         ref int end = ref Unsafe.Add(ref curr, data.Length);
@@ -230,7 +233,7 @@ public static class Differentiation
         }
     }
 
-    public static void Diff4Scalar(Span<int> input)
+    private static void Diff4Scalar(Span<int> input)
     {
         // if there are 4 or fewer then it makes no sense to diff them
         if (input.Length <= 4)
@@ -241,7 +244,7 @@ public static class Differentiation
     }
 
 
-    public static void Undiff4Scalar(Span<int> input)
+    private static void Undiff4Scalar(Span<int> input)
     {
         // if there are 4 or fewer then it makes no sense to diff them
         if (input.Length <= 4)
@@ -251,7 +254,7 @@ public static class Differentiation
             input[i] = input[i] + input[i - 4];
     }
 
-    public static void Undiff4Simd(Span<int> data)
+    private static void Undiff4Simd(Span<int> data)
     {
         ref int curr = ref MemoryMarshal.GetReference(data);
         ref int end = ref Unsafe.Add(ref curr, data.Length);
@@ -278,7 +281,10 @@ public static class Differentiation
         }
     }
 
-
+    /// <summary>
+    /// Calculate a prefix sum in place.
+    /// </summary>
+    /// <param name="input"></param>
     public static void Undiff4(Span<int> input)
     {
         if (input.Length <= 4)

@@ -172,6 +172,12 @@ public static unsafe partial class SimdBitPacking32
             {{store}}({{load}}(input++), outVec++);
     }
 
+    /// <summary>
+    /// Pack the input array of integers into the output array of vectors.
+    /// </summary>
+    /// <param name="input">The input array of integers.</param>
+    /// <param name="output">The output array of vectors.</param>
+    /// <param name="bit">The bit width.</param>
     public static void Pack(uint* input, {{vt}}* output, int bit)
     {
         switch (bit)
@@ -186,6 +192,13 @@ public static unsafe partial class SimdBitPacking32
         }
     }
 
+    /// <summary>
+    /// Unpack the input array of vectors into the output array of integers.
+    /// </summary>
+    /// <param name="input">The input array of vectors.</param>
+    /// <param name="output">The output array of integers.</param>
+    /// <param name="bit">The bit width.</param>
+    /// <returns>The last vector.</returns>
     public static void Unpack({{vt}}* input, uint* output, int bit)
     {
         switch (bit)

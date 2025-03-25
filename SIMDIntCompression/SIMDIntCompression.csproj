@@ -8,7 +8,7 @@
 
     <PackageId>SIMDIntCompression</PackageId>
     <PackageDescription>Fast integer compression.</PackageDescription>
-    <PackageVersion>1.0.0-alpha1</PackageVersion>
+    <PackageVersion>1.0.0-alpha2</PackageVersion>
     <PackageTags>simd;compression;integer;performance</PackageTags>
     <Authors>Albert Du</Authors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>

@@ -39,13 +39,13 @@ public unsafe class S4_BP128_D4 : IIntCompressionCodec<uint>
     /// <summary>
     /// Encode an array of integers into a byte array.
     /// 
-    /// Prefer using <see cref="Encode(ReadOnlySpan{T}, Span{byte})"/> for safety.
+    /// Prefer using <see cref="Encode(ReadOnlySpan{uint}, Span{byte})"/> for safety.
     /// 
     /// </summary>
     /// <param name="input"></param>
     /// <param name="length"></param>
     /// <param name="output"></param>
-    /// <param name="nValue"=>number of bytes encoded</param>
+    /// <param name="nValue">number of bytes encoded</param>
 
     public static unsafe void Encode(uint* input, nint length, uint* output, out nint nValue)
     {

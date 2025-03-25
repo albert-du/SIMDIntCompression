@@ -9,6 +9,7 @@ namespace SIMDIntCompression;
 /// </summary>
 public unsafe class StreamVByte_D1 : IIntCompressionCodec<uint>
 {
+    /// <inheritdoc/>
     public static int BlockSize => 1;
 
     /// <inheritdoc/>
