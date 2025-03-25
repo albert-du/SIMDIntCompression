@@ -6862,7 +6862,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 1) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -7066,7 +7066,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 2) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -7163,7 +7163,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -7271,7 +7271,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 3) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -7479,7 +7479,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 4) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -7528,7 +7528,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -7577,7 +7577,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -7626,7 +7626,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -7686,7 +7686,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 5) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -7898,7 +7898,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 6) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -7999,7 +7999,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -8111,7 +8111,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 7) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -8327,7 +8327,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 8) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -8352,7 +8352,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -8377,7 +8377,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -8402,7 +8402,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -8427,7 +8427,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -8452,7 +8452,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -8477,7 +8477,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -8502,7 +8502,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -8538,7 +8538,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 9) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -8758,7 +8758,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 10) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -8863,7 +8863,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -8979,7 +8979,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 11) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -9203,7 +9203,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 12) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -9256,7 +9256,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -9309,7 +9309,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -9362,7 +9362,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -9426,7 +9426,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 13) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -9654,7 +9654,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 14) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -9763,7 +9763,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -9883,7 +9883,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 15) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -10115,7 +10115,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 16) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -10128,7 +10128,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -10141,7 +10141,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -10154,7 +10154,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -10167,7 +10167,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -10180,7 +10180,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -10193,7 +10193,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -10206,7 +10206,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -10219,7 +10219,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -10232,7 +10232,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -10245,7 +10245,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -10258,7 +10258,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -10271,7 +10271,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -10284,7 +10284,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -10297,7 +10297,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -10310,7 +10310,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -10334,7 +10334,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 17) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -10570,7 +10570,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 18) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -10683,7 +10683,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -10807,7 +10807,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 19) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -11047,7 +11047,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 20) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -11104,7 +11104,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -11161,7 +11161,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -11218,7 +11218,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -11286,7 +11286,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 21) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -11530,7 +11530,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 22) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -11647,7 +11647,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -11775,7 +11775,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 23) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -12023,7 +12023,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 24) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -12052,7 +12052,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -12081,7 +12081,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -12110,7 +12110,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -12139,7 +12139,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -12168,7 +12168,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -12197,7 +12197,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -12226,7 +12226,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -12266,7 +12266,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 25) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -12518,7 +12518,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 26) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -12639,7 +12639,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -12771,7 +12771,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 27) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -13027,7 +13027,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 28) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -13088,7 +13088,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -13149,7 +13149,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -13210,7 +13210,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -13282,7 +13282,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 29) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -13542,7 +13542,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 30) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -13667,7 +13667,7 @@ public static unsafe partial class SimdBitPacking32D4
         initOffset = outReg;
         Vector128.Store(outReg, (uint*)outVec++);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -13803,7 +13803,7 @@ public static unsafe partial class SimdBitPacking32D4
         V128i tmp;
         V128i mask = Vector128.Create((1u << 31) - 1);
 
-        tmp=inReg;
+        tmp = inReg;
         outReg = tmp & mask;
         outReg += initOffset;
         initOffset = outReg;
@@ -14108,7 +14108,7 @@ public static unsafe partial class SimdBitPacking32D4
             case 30: Pack30(initOffset, input, output); break; 
             case 31: Pack31(initOffset, input, output); break; 
             case 32: Pack32(initOffset, input, output); break; 
-            // NOTE: Pack32 could be further optimized but isn't here since it's an extreme edge case
+            // NOTE: Pack32 could be further optimized since it's an extreme edge case
             default: throw new ArgumentException("Unsupported bit width.");
         }
     }

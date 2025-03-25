@@ -88,7 +88,7 @@ let unpackBitInternal bit =
                 if x > 0 then
                     $"tmp = inReg >> {x};"
                 else
-                    $"tmp=inReg;"
+                    $"tmp = inReg;"
 
                 if x + bit < 32 then
                     $"outReg = tmp & mask;"

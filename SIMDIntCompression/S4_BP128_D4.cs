@@ -184,10 +184,7 @@ public unsafe class S4_BP128_D4 : IIntCompressionCodec<uint>
     /// <inheritdoc/>
     public static int Decode(ReadOnlySpan<byte> input, Span<uint> output)
     {
-        var (w, r) = DecodePart(input, output);
-        if (r != input.Length)
-            throw new InvalidDataException("Length mismatch");
-
+        var (w, _) = DecodePart(input, output);
         return w;
     }
 

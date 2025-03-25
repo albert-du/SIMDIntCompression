@@ -7,9 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="prelude.fs" />
     <Compile Include="SSe2Fact.fs" />
+    <Compile Include="S4_BP128_D4Tests.fs" />
     <Compile Include="VectorExtensionTests.fs" />
-    <Compile Include="Tests.fs" />
+    <Compile Include="BinaryPacking128Tests.fs" />
+    <Compile Include="StreamVByteTests.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
